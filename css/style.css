@@ -13,6 +13,8 @@
     border: 9px solid rgb(41, 246, 58);
     background-color: #1C5550;
     display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 200px;
     
 }
 
@@ -55,6 +57,8 @@ aside {
     background-color: #1C5550;
     width: min(100%, 320px);
 }
+
+
 
 
 /* nav, ul {
