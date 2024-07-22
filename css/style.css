@@ -20,6 +20,11 @@
 
 header {
     border: 4px solid red;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    
 }
 
 
@@ -54,6 +59,7 @@ header {
 aside {
     background-color: #1C5550;
     width: min(100%, 320px);
+    
 }
 
 
