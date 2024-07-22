@@ -1,73 +1,34 @@
-/* .container {
-    padding: 32px 20px;
-    margin: auto;
-    width: min(100%, 1440px);
-    border: 9px solid red;
-    background-color: #1C5550;
-} */
-
 .container {
     padding: 32px 20px;
     margin: auto;
     width: min(100%, 1440px);
-    border: 9px solid rgb(41, 246, 58);
+    /* border: 9px solid rgb(111, 0, 255); */
     background-color: #1C5550;
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 200px;
-    
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+     "header header header header"
+     "aside section1 section1 section2"
+     "section3 section3 section3 section3 "
+     "article1 article2 article3 article4"
+     
+    ;
+
+    gap: 20px;
 }
 
 header {
-    border: 4px solid red;
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    width: 100%;
-    
-}
-
-
-
-.card {
-    width: 200px;
-    height: 186px;
-
-}
-
-.card1 {
-    background-color: aqua;
-}
-
-.card2 {
-    background-color: maroon;
-}
-
-.card3 {
-    background-color: rgb(27, 21, 199);
-}
-
-.card4 {
-    background-color: khaki;
-}
-
-header {
-    margin: auto;
-    
-}
-
-aside {
-    background-color: #1C5550;
-    width: min(100%, 320px);
-    
-}
-
-
-
-
-/* nav, ul {
     display: flex;
-    column-gap: 80px;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 5px solid red; */
+    grid-area: header;
+}
+
+.ul1 {
+    display: flex;
+    column-gap: 20px;
 }
 
 a {
@@ -77,19 +38,69 @@ a {
     font-weight: 400;
     line-height: 32px;
     text-align: left;
-
 }
 
-button {
+.icon_button {
     background-color: #1C5550;
 }
 
 .fa-solid {
     background-color: #1C5550;
     font-size: 32px;
-} */
+}
 
-/* aside {
-    background-color: #1C5550;
+aside {
     width: min(100%, 320px);
-} */
+    padding: 38px 115px 54px 40px;
+    line-height: 5px;
+    border: 5px solid black;
+    grid-area: aside;
+}
+
+h2 {
+    color: #C3B97F;
+}
+
+.nav2 {
+    height: 205px;
+    display: flex;
+}
+
+.ul2 {
+    row-gap: 5px;
+}
+
+.section1 {
+    grid-area: section1;
+}
+
+.section2 {
+    grid-area: section2;
+}
+
+.section3 {
+    grid-area: section3;
+}
+
+.article1 {
+    grid-area: article1;
+}
+
+.article2 {
+    grid-area: article2;
+}
+
+.article3 {
+    grid-area: article3;
+}
+
+.article4 {
+    grid-area: article4;
+}
+
+.example {
+    width: 200px;
+    height: 200px;
+    background-color: bisque;
+    border: 4px solid chartreuse;
+}
